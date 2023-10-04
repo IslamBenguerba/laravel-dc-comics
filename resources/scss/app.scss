@@ -1,0 +1,208 @@
+@use "bootstrap";
+@use "bootstrap-icons";
+
+
+//inizio header
+
+.nav-link {
+    font-weight: bolder;
+    position: relative;
+    text-align: center;
+
+    &:hover {
+        color: #0282f9;
+    }
+
+    .current-page {
+        position: absolute;
+        left: 0;
+        bottom: -33px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 100px;
+
+        &:focus::after {
+            content: "";
+            width: 70%;
+            height: 10px;
+
+            background-color: #0282f9;
+        }
+    }
+}
+
+.jumbotron {
+    background-image: url("/public/images/jumbotron.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+//fine header
+
+.bg-bluestripe {
+    background-color: #0282f9;
+}
+
+.bluestripe-title {
+    color: white;
+
+}
+
+.current-siries{
+    align-self: baseline;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+.cards-container{
+    background-color: #303030;
+}
+.add-fumetto{
+    margin-bottom: 25px;
+}
+.card {
+    background-color: transparent;
+    color: white;
+    border: 0;
+
+    .title-hover:hover {
+        background-color: black;
+
+        img {
+            opacity: .2;
+        }
+
+        .type{
+            opacity: 1 !important;
+            font-size: large;
+            font-weight: bold;
+            bottom: 12px;
+        }
+        .titolo-prezzo {
+            opacity: 1 !important;
+            font-size: large;
+            font-weight: bold;
+            bottom: 35px;
+        }
+    }
+
+    img {
+        height: 180px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .title-type {
+        top: 0;
+    }
+
+    .title-price {
+        bottom: 0;
+    }
+}
+
+.span-el {
+    max-width: 180px;
+    height: 50px;
+}
+
+
+.box-container {
+    max-width: 1320px;
+}
+
+.comic {
+    .comic-box {
+        position: absolute;
+        top: -330px;
+        width: 200px;
+        height: 300px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.green-box {
+    font-weight: bold;
+    background-color: #55ba59;
+    color: white;
+    padding: .5rem 1rem;
+    margin: 1.5rem 0;
+}
+
+.title-width {
+    min-width: 101px;
+    margin-right: 10px;
+}
+
+//inizio del footer
+
+.links-container {
+    background-image: url("/public/images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.credits {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 380px;
+
+    h5 {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
+
+.contacts-container {
+    background-color: #303030;
+    padding: 2rem 0;
+
+    button {
+        color: white;
+        border-radius: 0;
+    }
+
+    h4 {
+        color: #0282f9;
+        text-transform: uppercase;
+        margin: 0;
+        width: 100%;
+    }
+
+    i {
+        margin: 0 .5rem;
+        font-size: 2rem;
+    }
+}
+
+.dc-bg {
+    background-image: url("/public/img/dc-logo-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 380px;
+    width: 600px;
+    right: 0;
+}
+
+a,
+h5 {
+    color: white;
+    text-decoration: none;
+}
+
+.card-box{
+    width: calc((100% / 6) - 1.5rem);
+}
+
+.list-footer-liks{
+    padding: 0;
+    list-style: none;
+}
